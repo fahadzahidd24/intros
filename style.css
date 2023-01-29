@@ -1,0 +1,129 @@
+*{
+    padding:0;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(233, 223, 209);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 2em;
+    width:50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px 2px grey;
+    background-color: rgb(233, 230, 230);
+}
+h1{
+    color: rgb(3, 3, 63);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+hr{
+    width: 10%;
+    margin-top: 7px;
+    margin-bottom: 20px;
+    height: 2px;
+    background-color: rgb(2, 16, 136);
+}
+.img{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+.img>img{
+    object-fit: contain;
+    width:15%;
+    background: blue;
+    border-radius: 50%;
+    /* border:1px solid white; */
+    /* outline:white; */
+}
+.others{
+    /* border: 1px solid red; */
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.name{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color:rgb(2, 9, 75);
+}
+.project{
+    color: rgb(71, 71, 71);
+    text-transform: uppercase;
+}
+.desc{
+    color:rgba(49, 49, 49, 0.479) ;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 10px;
+}
+.buttons{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.btn{
+    margin: 1em;
+    padding: 0.8em;
+    border-radius: 1em;
+    border: none;
+    background-color: grey;
+    color: rgb(255, 255, 255);
+}
+.previous{
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width:953px) and  (min-width:375px){
+    .name,.project{
+        font-size: 15px;
+    }
+    /* .container{
+        /* height: 60vh; */
+    /* }  */
+    .img>img{
+        width: 60px;
+    }
+    .desc{
+        /* overflow: hidden; */
+        font-size: 10px;
+        text-align: left;
+        padding: 0;
+    }
+    .btn{
+        margin-top: 2em;
+    }
+}
+/* @media screen and (ma-width:953px){
+    .desc{
+        font-size: 20px;
+    }
+    .buttons{
+        margin-top: 20px;
+    }
+} */
